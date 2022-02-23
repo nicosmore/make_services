@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: white;
+    background-image:linear-gradient(to right,rgb(255, 217, 0) , white );
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,8 @@ body{
 }
 
 .menu{
-    grid-area: men;       
+    grid-area: men; 
+          
             
 }
 
@@ -53,7 +54,21 @@ body{
     height: 30%;
     
 }
+.texto__slider:hover{  
+    animation: animacion 6s;
 
+}
+
+@keyframes animacion {
+    20%{
+        background-color: black;
+        color: rgb(255, 217, 0);
+    }
+    50%{
+        transform: scale(2);
+        font-weight: 600;
+    }
+}
 
 li{
     list-style: none;
@@ -89,7 +104,6 @@ nav{
     color: white;
 }
 .contenedor{
-    background-color: white;
     display: grid;
     padding-top: 5px;
     gap: 5px;
@@ -194,7 +208,7 @@ h1{
    
 @media screen and (min-width:1200px){
     .contenedor{
-        background-color: white;
+        
         display: grid;
         padding-top: 5px;
         gap: 2px;
@@ -209,7 +223,7 @@ h1{
          justify-content: end;
     }
     .menu{
-        background-color: white;
+        background-color: transparent;
     }
     .menu ul li a{
         font-weight: 400;
